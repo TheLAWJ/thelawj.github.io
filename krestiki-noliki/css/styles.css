@@ -1,0 +1,182 @@
+/*=================================== Imports ========================================*/
+@import url("https://fonts.googleapis.com/css?family=Fresca|Indie+Flower|Pacifico");
+/*=================================== Styles reset  ========================================*/
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img, abbr {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ul li {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+sup {
+  vertical-align: text-top; }
+
+sub {
+  vertical-align: text-bottom; }
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+legend {
+  color: #000; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+  display: block; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*=================================== Main styles ========================================*/
+.wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #f2f2f2;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.clearButton {
+  font-family: 'Fresca', sans-serif;
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px 50px;
+  font-size: 16px;
+  color: #fff;
+  background: #109bce;
+  text-shadow: 1px 1px 0px #07526e;
+  text-transform: uppercase;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #07526e, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #07526e, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #07526e, 0px 10px 5px #999;
+  margin-bottom: 20px;
+  -webkit-transition: .2s all;
+  -o-transition: .2s all;
+  -moz-transition: .2s all;
+  transition: .2s all;
+  border: none;
+  outline: none; }
+  .clearButton:hover {
+    -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 4px 0px 0px #07526e, 0px 8px 7px #999;
+    -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 4px 0px 0px #07526e, 0px 8px 7px #999;
+    box-shadow: inset 0px 1px 0px #2ab7ec, 0px 4px 0px 0px #07526e, 0px 8px 7px #999;
+    background: #23b7ee; }
+  .clearButton:active {
+    -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #07526e, 0px 5px 3px #999;
+    -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #07526e, 0px 5px 3px #999;
+    box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #07526e, 0px 5px 3px #999;
+    background: #109bce; }
+
+.header {
+  font-family: 'Fresca', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase; }
+  .header__game-Player {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    margin-left: 20px; }
+
+.gameArea {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .gameArea__placeForClickResult {
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
+    -moz-transition: .2s all;
+    transition: .2s all;
+    -webkit-flex-basis: 100px;
+    -ms-flex-preferred-size: 100px;
+    flex-basis: 100px;
+    height: 100px;
+    background: #d9d9d9;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid black;
+    cursor: pointer;
+    font-family: 'Indie Flower', cursive;
+    font-size: 70px;
+    text-align: center;
+    line-height: 100px;
+    text-transform: uppercase;
+    color: #595959; }
+    .gameArea__placeForClickResult:hover {
+      background: #e5e5e5; }
+
+.winner-table {
+  width: 500px;
+  height: 304px;
+  background: #109bce;
+  font-family: 'Indie Flower', cursive;
+  line-height: 300px;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  top: 102px;
+  -webkit-box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: 1s opacity;
+  -o-transition: 1s opacity;
+  -moz-transition: 1s opacity;
+  transition: 1s opacity;
+  display: none; }
+  .winner-table__winnerArea {
+    font-family: 'Pacifico', cursive; }
+
+.active {
+  opacity: 1;
+  display: block; }
