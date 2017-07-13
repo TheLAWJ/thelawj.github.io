@@ -1,0 +1,206 @@
+@import _settings.sass
+//buttons
+.button__bordered
+  box-sizing: border-box
+  text-align: center
+  border: 1px solid white
+  height: 68px
+  color: white
+  border-radius: 2px
+  font-family: 'Open Sans', sans-serif
+  font-weight: 300
+  font-size: 2rem
+  text-shadow: none
+  line-height: 3.3333rem
+  cursor: pointer
+  transition: .3s all
+  overflow: hidden
+  &:hover
+    color: $orange
+    border-color: $orange
+.button__filled
+  box-sizing: border-box
+  text-align: center
+  background: $orange
+  color: white
+  border-bottom: 5px solid $dark-orange
+  height: 68px
+  border-radius: 2px
+  font-family: 'Open Sans', sans-serif
+  font-weight: 300
+  font-size: 2rem
+  text-shadow: none
+  line-height: 3.3333rem
+  cursor: pointer
+  transition: .3s all
+  overflow: hidden
+  &:hover
+    background: $dark-orange
+    border-bottom-color: darken($dark-orange, 11.5%)
+//HEADER
+.header
+  text-shadow: 3px 4px 5px rgba(#000, .5)
+  color: white
+  padding: 30px 0
+  background: url('../img/menuImage.jpg')
+  background-position: top center
+  background-size: cover
+  background-attachment: fixed
+  &__button
+    margin: 0 auto
+    +size(4)
+    +size-sm(6)
+    +size-xs(8)
+    +size-xxs(10)
+    +xs-block()
+      color: $orange
+      border-color: $orange
+    //HEADER MENU STYLES START
+  &-menu
+    justify-content: center
+    +row-flex()
+    &__burger
+      display: none
+      font-size: 50px
+      margin-left: auto
+      +xs-block()
+        display: flex
+      +xxs-block()
+        align-items: center
+      &:hover
+        color: $orange
+        transition: all .3s
+    &__logo
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding: 0 35px 0 15px
+      +col()
+      +size(4)
+      +lg-block()
+        padding: 0
+        justify-content: space-around
+      +size-md(5)
+      +size-sm(7)
+      +size-xs(10)
+      +xs-block()
+        justify-content: center
+      +size-xxs(10)
+      +xxs-block()
+        flex-direction: column
+        text-align: center
+    &__navigation
+      display: flex
+      align-items: center
+      justify-content: space-between
+      +size(5)
+      +offset-left(2)
+      +size-md(7)
+      +size-sm(8)
+      +md-block()
+        +offset-left(0)
+      +xs-block()
+        display: none
+      &_active-item
+        color: $orange
+        text-decoration: underline
+        &:hover
+          color: $dark-orange
+      li:hover
+        @extend .header-menu__navigation_active-item
+//HEADER MENU STYLES END
+//HEADER CONTENT STYLES START
+.header-content
+  color: white
+  text-shadow: none
+  text-align: center
+  margin-top: 90px
+  justify-content: center
+  +md-block()
+    margin-top: 60px
+  +sm-block()
+    margin-top: 30px
+  +row-flex()
+  &__header
+    margin-bottom: 20px
+    +col()
+    +size(10)
+    +size-lg(12)
+    @media screen and (max-width: 803px) and (min-width: 780px)
+      padding: 0 50px
+  &__description
+    padding: 0 10px
+    margin-bottom: 30px
+    +col()
+    +size(10)
+    +size-sm(12)
+//HEADER CONTENT STYLES END
+//AboutUS Styles start
+.aboutUs
+  justify-content: center
+  padding: 30px 0
+  text-align: center
+  +row-flex()
+  &__header
+    margin-bottom: 30px
+    +col()
+    +size(12)
+  &__description
+    margin-bottom: 30px
+    color: $light-text-color
+    +col()
+    +size(10)
+    +size-xs(12)
+  &__subheader
+    margin-bottom: 30px
+    +col()
+    +size(12)
+  &__button
+    margin: 40px 0 10px 0
+    +col()
+    +size(4)
+    +size-lg(5)
+    +size-md(6)
+    +size-sm(9)
+    +size-xs(12)
+    +sm-block()
+      margin: 10px 0
+    &_bordered
+      border-color: black
+      color: black
+//item styles
+.item
+  background: $light-grey
+  border-radius: 10px
+  text-align: center
+  padding: 30px 5px
+  margin: 10px 0
+  +col()
+  +size(3)
+  +size-md(5)
+  +size-sm(6)
+  +size-xs(10)
+  +size-xxs(12)
+  &:hover
+    color: white
+    background: $orange
+    .item__icon
+      color: white
+    .item__description
+      color: white
+    .item__header::after
+      background: white
+  &__icon
+    font-size: 72px
+    color: $orange
+    margin-bottom: 20px
+  &__description
+    color: $light-text-color
+  &__header
+    &::after
+      content: ''
+      height: 1px
+      background: black
+      width: 65px
+      display: block
+      margin: 10px auto

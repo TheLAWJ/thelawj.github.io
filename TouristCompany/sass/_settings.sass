@@ -1,0 +1,83 @@
+@import _smart-grid.sass
+@import './fontawesome/font-awesome.scss'
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=cyrillic')
+//Variables
+$light-grey: #f5f5f5
+$orange: #ff5722
+$dark-orange: #e64a19
+$text-color: #212121
+$light-text-color: #757575
+//Debug
+.grid-debug
+    top: 0
+    +debug(rgba(0,0,0,.3),1px solid #f90)
+    display: none
+//Reset
++reset()
+li
+    list-style: none
+    transition: all .3s
+menu
+    margin: 0
+    padding: 0
+html,body
+    font-size: 18px
+    transition: all .3s
+    +xs-block()
+        font-size: 16px
+a
+    color: inherit
+    transition: all .3s
+    text-decoration: none
+//wrapper
+.wrapper
+    +wrapper()
+//Headers
+h1,h2,h3,h4,h5,h6,p,li,a
+    font-family: 'Open Sans', sans-serif
+    display: block
+h1
+    font-weight: 400
+    font-size: 2.66667rem
+    line-height: 2.66667rem
+    +xxs-block()
+        font-size: 2rem
+        line-height: 2rem
+h2
+    font-weight: 300
+    font-size: 2.66667rem
+    line-height: 2.66667rem
+    +xxs-block()
+        font-size: 2rem
+        line-height: 2rem
+h3
+    font-weight: 600
+    font-size: 1.666666667rem
+    line-height: 1.666666667rem
+    +xxs-block()
+        font-size: 1.3rem
+        line-height: 1.3rem
+h3.people, h3.footer
+    font-weight: 300
+h4
+    font-weight: 300
+    font-size: 1.333333333rem
+    line-height: 1.333333333rem
+    +xxs-block()
+        font-size: 1rem
+        line-height: 1rem
+h5
+    font-weight: 600
+    line-height: 1rem
+    font-size: 1rem
+p
+    font-weight: 400
+    font-size: 1rem
+    line-height: 1.333333333rem
+    +xxs-block()
+        line-height: 1rem
+li
+    font-weight: 600
+    font-size: 0.888888889rem
+    line-height: 0.888888889rem
+//mixins
