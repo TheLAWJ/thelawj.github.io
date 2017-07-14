@@ -6,26 +6,6 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-<!-- DEBUG-->
-<div class="grid-debug">
-  <div>
-    <div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-</div>
-<!-- DEBUG END -->
 <!--Header-->
   <header class="header">
     <div class="wrapper">
@@ -36,10 +16,10 @@
         </div>
         <a href="#"><i class="fa fa-bars menu__burger" aria-hidden="true"></i></a>
         <nav class="menu__navigation">
-          <a href="#"><li class="menu__navigation_active-item">Главная</li></a>
-          <a href="#"><li>Контакты</li></a>
-          <a href="#"><li>Программы</li></a>
-          <a href="#"><li>О нас</li></a>
+          <a href="index.html" class="menu__navigation_active-item"><li>Главная</li></a>
+          <a href="contacts.html"><li>Контакты</li></a>
+          <a href="programms.html"><li>Программы</li></a>
+          <a href="about.html"><li>О нас</li></a>
         </nav>
       </menu>
       <article class="header-content">
@@ -57,22 +37,22 @@
     <h2 class="aboutUs__header">О нас</h2>
     <p class="aboutUs__description">Тур-Сервис предлагает лучшие программы по всей России.  Среди которых наиболее популярные города - Москва, Санкт-Петербург, Тула, Казань, Тарханы, Псков и многое другое. Идет постоянная работа по открытию новых направлений. Туроператор организует групповые туры на базе собственных программ. Составление программ по запросам клиента. Самые низкие цены на экскурсионные обслуживание.</p>
     <h2 class="aboutUs__subheader">Почему именно мы?</h2>
-    <div class="item">
+    <div class="item item_hover">
       <div class="item__icon"><i class="fa fa-dollar"></i></div>
       <h3 class="item__header">У нас самая интересная программа</h3>
       <p class="item__description">Наша программа была составлена в соответствии с пожеланиями более чем 2000 наших клиентов!</p>
     </div>
-    <div class="item">
+    <div class="item item_hover">
       <div class="item__icon"><i class="fa fa-hand-peace-o"></i></div>
       <h3 class="item__header">Мы постоянно развиваем программу!</h3>
       <p class="item__description">Наша компания всегда прислушивается к критике и пожеланиям со стороны наших клиентов!</p>
     </div>
-    <div class="item">
+    <div class="item item_hover">
       <div class="item__icon"><i class="fa fa-thumbs-up"></i></div>
       <h3 class="item__header">У нас самые выгодные условия!</h3>
       <p class="item__description">Мы предоставляем комфортнейшие условия проживания во время ваших поездок!</p>
     </div>
-    <div class="item">
+    <div class="item item_hover">
       <div class="item__icon"><i class="fa fa-handshake-o"></i></div>
       <h3 class="item__header">У нас самые низкие цены в городе!</h3>
       <p class="item__description">Наша компания предоставляет самые низкие цены из всех, что вы когда-либо видели!</p>
@@ -171,10 +151,10 @@
           <h3>ООО Тур-Сервис</h3>
         </div>
         <nav class="menu__navigation_footer">
-          <a href="#"><li>Главная</li></a>
-          <a href="#"><li>Контакты</li></a>
-          <a href="#"><li>Программы</li></a>
-          <a href="#"><li>О нас</li></a>
+          <a href="index.html"><li>Главная</li></a>
+          <a href="contacts.html"><li>Контакты</li></a>
+          <a href="programms.html"><li>Программы</li></a>
+          <a href="about.html"><li>О нас</li></a>
         </nav>
       </menu>
       <div class="footer-subscribe">
@@ -182,12 +162,14 @@
       </div>
       <div class="footer__madeBy">
         <p>The site was created by:</p>
-        <a class="footer__madeBy_a" href="#">https://vk.com/thelawj</a>
+        <a class="footer__madeBy_a" href="https://vk.com/thelawj">https://vk.com/thelawj</a>
       </div>
     </div>
   </div>
 </section>
 <!--Scripts-->
+<script src="libs/jquery-3.2.1.min.js"></script>
+<script src="libs/slick.min.js" type="text/javascript"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
